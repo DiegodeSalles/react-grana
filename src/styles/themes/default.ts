@@ -22,9 +22,17 @@ export const defaultTheme = {
   "purple-900": "#581c87",
   "purple-950": "#3b0764",
 
+  "teal-500": "#14b8a6",
   "teal-600": "#0d9488",
   "teal-700": "#0f766e",
   "teal-800": "#115e59",
   "teal-900": "#134e4a",
   "teal-950": "#042f2e",
+
+  "rose-500": "#f43f5e",
+  "rose-600": "#e11d48",
+  "rose-700": "#be123c",
+  "rose-800": "#9f1239",
+  "rose-900": "#881337",
+  "rose-950": "#4c0519",
 } as const;

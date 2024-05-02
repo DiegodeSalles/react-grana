@@ -7,7 +7,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Entrada</span>
-          <ArrowCircleUp size={32} color="#00b37e" />
+          <ArrowCircleUp size={32} color="#0d9488" />
         </header>
 
         <strong>R$ 17.400,00</strong>
@@ -15,7 +15,7 @@ export function Summary() {
       <SummaryCard>
         <header>
           <span>Saídas</span>
-          <ArrowCircleDown size={32} color="#f75a68" />
+          <ArrowCircleDown size={32} color="#e11d48" />
         </header>
 
         <strong>R$ 17.400,00</strong>
@@ -23,7 +23,7 @@ export function Summary() {
       <SummaryCard variant="positive">
         <header>
           <span>Total</span>
-          <CurrencyDollar size={32} color="#fff" />
+          <CurrencyDollar size={32} color="#e4e4e7" />
         </header>
 
         <strong>R$ 17.400,00</strong>
