@@ -10,4 +10,21 @@ export const defaultTheme = {
   "zinc-700": "#3f3f46",
   "zinc-800": "#27272a",
   "zinc-900": "#18181b",
+
+  "purple-100": "#f3e8ff",
+  "purple-200": "#e9d5ff",
+  "purple-300": "#d8b4fe",
+  "purple-400": "#c084fc",
+  "purple-500": "#a855f7",
+  "purple-600": "#9333ea",
+  "purple-700": "#7e22ce",
+  "purple-800": "#6b21a8",
+  "purple-900": "#581c87",
+  "purple-950": "#3b0764",
+
+  "teal-600": "#0d9488",
+  "teal-700": "#0f766e",
+  "teal-800": "#115e59",
+  "teal-900": "#134e4a",
+  "teal-950": "#042f2e",
 } as const;
