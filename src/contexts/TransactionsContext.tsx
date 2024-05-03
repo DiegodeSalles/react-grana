@@ -1,0 +1,37 @@
+import { ReactNode, createContext, useEffect, useState } from "react";
+
+interface Transaction {
+  id: number;
+  description: string;
+  price: number;
+  type: "income" | "outcome";
+  category: string;
+  createdAt: Date;
+}
+
+interface TransactionContextType {
+  transactions: Transaction[];
+}
+
+interface TransactionsProviderProps {
+  children: ReactNode;
+}
+
+export const TransactionsContext = createContext({} as TransactionContextType);
+
+export function TransactionsProvider({ children }: TransactionsProviderProps) {
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
+
+  useEffect(() => {
+    (async function fetchData() {
+      const response = await fetch("http://localhost:3000/transactions");
+      const data = await response.json();
+      setTransactions(() => data);
+    })();
+  }, []);
+  return (
+    <TransactionsContext.Provider value={{ transactions }}>
+      {children}
+    </TransactionsContext.Provider>
+  );
+}
